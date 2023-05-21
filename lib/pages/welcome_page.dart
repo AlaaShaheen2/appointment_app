@@ -10,7 +10,17 @@ class WelcomePage extends StatelessWidget {
         body: SizedBox(
           height: double.infinity,
           width: double.infinity,
-          child: Stack(children: [
+          child: Stack(
+            children: [
+              Column(
+                children: [
+                  Text('Welcom',style: TextStyle(
+                  fontSize: 32,
+                  
+                  fontFamily: 'Pacifico',
+                ), ),
+                ],
+              ),
             Positioned(
               left: 0,
               child: Image.asset(
