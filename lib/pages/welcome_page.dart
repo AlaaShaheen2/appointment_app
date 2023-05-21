@@ -8,7 +8,7 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 250, 248, 240),
+        backgroundColor: Color.fromARGB(255, 247, 246, 243),
         body: SizedBox(
           height: double.infinity,
           width: double.infinity,
@@ -32,7 +32,7 @@ class WelcomePage extends StatelessWidget {
                     ),
                     Image.asset(
                       'assets/images/welcome.png',
-                      width: 700,
+                      width: double.infinity,
                     ),
                     CustomButton(
                       onClick: () {
@@ -58,7 +58,7 @@ class WelcomePage extends StatelessWidget {
             Positioned(
               left: 0,
               child: Image.asset(
-                'assets/images/main_top.png',
+                'assets/images/signup_top.png',
                 width: 100,
               ),
             ),
