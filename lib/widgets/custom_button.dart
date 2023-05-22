@@ -4,7 +4,11 @@ class CustomButton extends StatelessWidget {
   final Color color;
   final String txt;
   final VoidCallback onClick;
-  const CustomButton({super.key, required this.txt, required this.onClick, required this.color});
+  const CustomButton(
+      {super.key,
+      required this.txt,
+      required this.onClick,
+      required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +21,9 @@ class CustomButton extends StatelessWidget {
         ),
       ),
       style: ButtonStyle(
-        backgroundColor:
-            MaterialStateProperty.all(color),
+        backgroundColor: MaterialStateProperty.all(color),
         padding: MaterialStateProperty.all(
-            EdgeInsets.symmetric(horizontal: 77, vertical: 13)),
+            EdgeInsets.symmetric(horizontal: 90, vertical: 13)),
         shape: MaterialStateProperty.all(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(27))),
       ),

@@ -1,6 +1,8 @@
 import 'package:appointment_app/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_button.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -31,7 +33,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      'assets/images/2.png',
+                      'assets/images/9.png',
                       width: double.infinity,
                     ),
                     CustomTextField(
@@ -56,6 +58,14 @@ class LoginPage extends StatelessWidget {
                         size: 19,
                       ),
                     ),
+                    SizedBox(
+                      height: 22,
+                    ),
+                    CustomButton(
+                      onClick: () {},
+                      txt: 'Login',
+                      color: Color.fromARGB(255, 209, 115, 179),
+                    ),
                   ],
                 ),
               ),
@@ -72,7 +82,7 @@ class LoginPage extends StatelessWidget {
               right: 0,
               child: Image.asset(
                 'assets/images/10.png',
-                width: 300,
+                width: 200,
               ),
             ),
           ]),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_button.dart';
 import '../widgets/custom_textfield.dart';
 
 class SignupPage extends StatelessWidget {
@@ -57,6 +58,14 @@ class SignupPage extends StatelessWidget {
                         size: 19,
                       ),
                     ),
+                    SizedBox(
+                      height: 22,
+                    ),
+                    CustomButton(
+                      onClick: () {},
+                      txt: 'Signup',
+                      color: Color.fromARGB(255, 156, 112, 150),
+                    ),
                   ],
                 ),
               ),
@@ -73,7 +82,7 @@ class SignupPage extends StatelessWidget {
               right: 0,
               child: Image.asset(
                 'assets/images/15.png',
-                width: 300,
+                width: 150,
               ),
             ),
           ]),
