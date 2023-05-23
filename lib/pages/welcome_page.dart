@@ -4,6 +4,8 @@ import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../widgets/custome_icon.dart';
+
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
 
@@ -56,24 +58,6 @@ class WelcomePage extends StatelessWidget {
                       color: Color(0xffa85080),
                     ),
                     SizedBox(
-                      height: 10,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text("Already have an accout? "),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(context, "/login");
-                          },
-                          child: Text(
-                            " Log in",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
                       height: 17,
                     ),
                     SizedBox(
@@ -104,74 +88,30 @@ class WelcomePage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          GestureDetector(
+                          CustomIcon(
+                            pic: 'assets/icons/facebook.svg',
                             onTap: () {},
-                            child: Container(
-                              padding: EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.purple, width: 1)),
-                              child: SvgPicture.asset(
-                                "assets/icons/facebook.svg",
-                                color: Colors.purple[400],
-                                height: 27,
-                              ),
-                            ),
                           ),
                           SizedBox(
                             width: 22,
                           ),
-                          GestureDetector(
+                          CustomIcon(
+                            pic: 'assets/icons/google-plus.svg',
                             onTap: () {},
-                            child: Container(
-                              padding: EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.purple, width: 1)),
-                              child: SvgPicture.asset(
-                                "assets/icons/google-plus.svg",
-                                color: Colors.purple[400],
-                                height: 27,
-                              ),
-                            ),
                           ),
                           SizedBox(
                             width: 22,
                           ),
-                          GestureDetector(
+                          CustomIcon(
+                            pic: 'assets/icons/twitter.svg',
                             onTap: () {},
-                            child: Container(
-                              padding: EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.purple, width: 1)),
-                              child: SvgPicture.asset(
-                                "assets/icons/twitter.svg",
-                                color: Colors.purple[400],
-                                height: 27,
-                              ),
-                            ),
                           ),
                           SizedBox(
                             width: 22,
                           ),
-                          GestureDetector(
+                          CustomIcon(
+                            pic: 'assets/icons/text-messaging-icon.svg',
                             onTap: () {},
-                            child: Container(
-                              padding: EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  border: Border.all(
-                                      color: Colors.purple, width: 1)),
-                              child: SvgPicture.asset(
-                                "assets/icons/text-messaging-icon.svg",
-                                color: Colors.purple[400],
-                                height: 27,
-                              ),
-                            ),
                           ),
                           SizedBox(
                             width: 22,

@@ -1,7 +1,9 @@
+import 'package:appointment_app/pages/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
+import '../helper/show_snack_bar.dart';
 import '../widgets/custom_button.dart';
 import '../widgets/custom_textfield.dart';
 
@@ -92,6 +94,7 @@ class _SignupPageState extends State<SignupPage> {
                               setState(() {});
                               try {
                                 await registerUser();
+                                Navigator.pushNamed(context, HomePage.id);
                               } on FirebaseAuthException catch (ex) {
                                 if (ex.code == 'weak-password') {
                                   showSnackBar(context, 'Weak Password');
@@ -132,14 +135,6 @@ class _SignupPageState extends State<SignupPage> {
             ]),
           ),
         ),
-      ),
-    );
-  }
-
-  void showSnackBar(BuildContext context, String message) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(message),
       ),
     );
   }

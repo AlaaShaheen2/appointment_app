@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField(
+  const CustomTextField(
       {required this.hintText,
-      this.onChange,
+      required this.onChange,
       required this.icon,
       required bool obscureTxt});
-  Function(String)? onChange;
+  final Function(String)? onChange;
   final String? hintText;
   final Icon? icon;
   final bool obscureTxt = false;
