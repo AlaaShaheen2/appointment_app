@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -19,9 +22,6 @@ class WelcomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(
-                      height: 35,
-                    ),
                     Text(
                       'Welcome',
                       style: TextStyle(
@@ -42,14 +42,142 @@ class WelcomePage extends StatelessWidget {
                       color: Color.fromARGB(255, 216, 189, 206),
                     ),
                     SizedBox(
-                      height: 22,
+                      height: 18,
                     ),
                     CustomButton(
                       onClick: () {
+                        // Navigator.push(context,
+                        //     MaterialPageRoute(builder: (BuildContext context) {
+                        //   return SignupPage();
+                        // }));
                         Navigator.pushNamed(context, "/signup");
                       },
                       txt: 'Signup',
                       color: Color(0xffa85080),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Already have an accout? "),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, "/login");
+                          },
+                          child: Text(
+                            " Log in",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 17,
+                    ),
+                    SizedBox(
+                      width: 299,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Divider(
+                            thickness: 0.6,
+                            color: Colors.purple[900],
+                          )),
+                          Text(
+                            "OR",
+                            style: TextStyle(
+                              color: Colors.purple[900],
+                            ),
+                          ),
+                          Expanded(
+                              child: Divider(
+                            thickness: 0.6,
+                            color: Colors.purple[900],
+                          )),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 27),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              padding: EdgeInsets.all(13),
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                      color: Colors.purple, width: 1)),
+                              child: SvgPicture.asset(
+                                "assets/icons/facebook.svg",
+                                color: Colors.purple[400],
+                                height: 27,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 22,
+                          ),
+                          GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              padding: EdgeInsets.all(13),
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                      color: Colors.purple, width: 1)),
+                              child: SvgPicture.asset(
+                                "assets/icons/google-plus.svg",
+                                color: Colors.purple[400],
+                                height: 27,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 22,
+                          ),
+                          GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              padding: EdgeInsets.all(13),
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                      color: Colors.purple, width: 1)),
+                              child: SvgPicture.asset(
+                                "assets/icons/twitter.svg",
+                                color: Colors.purple[400],
+                                height: 27,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 22,
+                          ),
+                          GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              padding: EdgeInsets.all(13),
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                      color: Colors.purple, width: 1)),
+                              child: SvgPicture.asset(
+                                "assets/icons/text-messaging-icon.svg",
+                                color: Colors.purple[400],
+                                height: 27,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 22,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -67,7 +195,7 @@ class WelcomePage extends StatelessWidget {
               right: 0,
               child: Image.asset(
                 'assets/images/21.png',
-                width: 300,
+                width: 200,
               ),
             ),
           ]),
