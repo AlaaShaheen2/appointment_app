@@ -64,9 +64,10 @@ class WelcomePage extends StatelessWidget {
             ),
             Positioned(
               bottom: 0,
+              right: 0,
               child: Image.asset(
-                'assets/images/main_bottom.png',
-                width: 100,
+                'assets/images/21.png',
+                width: 300,
               ),
             ),
           ]),
