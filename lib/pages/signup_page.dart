@@ -38,6 +38,7 @@ class _SignupPageState extends State<SignupPage> {
               SizedBox(
                 width: double.infinity,
                 child: SingleChildScrollView(
+                  reverse: true,
                   child: Form(
                     key: formkey,
                     child: Column(

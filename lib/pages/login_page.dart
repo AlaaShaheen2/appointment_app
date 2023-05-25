@@ -31,6 +31,7 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               width: double.infinity,
               child: SingleChildScrollView(
+                reverse: true,
                 child: Form(
                   key: formkey,
                   child: Column(

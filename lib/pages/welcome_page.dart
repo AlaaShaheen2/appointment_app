@@ -48,10 +48,6 @@ class WelcomePage extends StatelessWidget {
                     ),
                     CustomButton(
                       onClick: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (BuildContext context) {
-                        //   return SignupPage();
-                        // }));
                         Navigator.pushNamed(context, "/signup");
                       },
                       txt: 'Signup',
