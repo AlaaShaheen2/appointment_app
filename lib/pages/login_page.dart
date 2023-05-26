@@ -28,7 +28,12 @@ class _LoginPageState extends State<LoginPage> {
           height: double.infinity,
           width: double.infinity,
           child: Stack(children: [
-            SizedBox(
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/background/7.png'),
+                    fit: BoxFit.fill),
+              ),
               width: double.infinity,
               child: SingleChildScrollView(
                 reverse: true,
@@ -110,21 +115,6 @@ class _LoginPageState extends State<LoginPage> {
                     ],
                   ),
                 ),
-              ),
-            ),
-            Positioned(
-              left: 0,
-              child: Image.asset(
-                'assets/images/signup_top.png',
-                width: 100,
-              ),
-            ),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: Image.asset(
-                'assets/images/10.png',
-                width: 200,
               ),
             ),
           ]),
