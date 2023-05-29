@@ -58,6 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                         width: double.infinity,
                       ),
                       CustomTextField(
+                        textInputType: TextInputType.emailAddress,
                         obscureTxt: false,
                         onChange: (data) {
                           email = data;
@@ -72,6 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                         height: 22,
                       ),
                       CustomTextField(
+                        textInputType: TextInputType.text,
                         obscureTxt: true,
                         onChange: (data) {
                           password = data;

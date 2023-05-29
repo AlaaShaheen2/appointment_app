@@ -34,7 +34,7 @@ class _SignupPageState extends State<SignupPage> {
           body: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/background/19.png'),
+                image: AssetImage('assets/images/background/27.png'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -67,6 +67,7 @@ class _SignupPageState extends State<SignupPage> {
                             width: double.infinity,
                           ),
                           CustomTextField(
+                            textInputType: TextInputType.emailAddress,
                             obscureTxt: false,
                             onChange: (data) {
                               email = data;
@@ -81,6 +82,7 @@ class _SignupPageState extends State<SignupPage> {
                             height: 22,
                           ),
                           CustomTextField(
+                            textInputType: TextInputType.text,
                             obscureTxt: true,
                             onChange: (data) {
                               password = data;

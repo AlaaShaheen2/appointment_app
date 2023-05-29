@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({this.hintText, this.onChange, this.icon, this.obscureTxt});
+  CustomTextField(
+      {this.hintText,
+      this.onChange,
+      this.icon,
+      this.obscureTxt,
+      this.textInputType});
+      
   Function(String)? onChange;
+  TextInputType? textInputType;
   String? hintText;
   Icon? icon;
   bool? obscureTxt;
@@ -16,6 +23,7 @@ class CustomTextField extends StatelessWidget {
       width: 266,
       padding: EdgeInsets.symmetric(horizontal: 16),
       child: TextFormField(
+        keyboardType: textInputType,
         validator: (data) {
           if (data!.isEmpty) {
             return 'Field is required';
