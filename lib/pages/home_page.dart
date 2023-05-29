@@ -1,5 +1,8 @@
 import 'package:appointment_app/widgets/constant.dart';
+import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/grid_view_services.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,6 +12,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Padding(
+        padding: EdgeInsets.only(top: 22, bottom: 22),
+        child: Column(
+          children: [
+            Flexible(
+              child: ServicesGridView(),
+            ),
+            CustomButton(
+              txt: 'Take appoinment',
+              onClick: () {},
+              color: Color.fromARGB(255, 203, 145, 173),
+            )
+          ],
+        ),
+      ),
       drawer: Drawer(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -61,18 +79,8 @@ class HomePage extends StatelessWidget {
         ),
       ),
       appBar: AppBar(
+        title: Text('Home Page'),
         backgroundColor: appBarColor,
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/background/26.png'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Center(
-          child: Column(),
-        ),
       ),
     );
   }
