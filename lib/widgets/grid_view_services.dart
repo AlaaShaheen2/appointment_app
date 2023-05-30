@@ -13,7 +13,7 @@ class ServicesGridView extends StatelessWidget {
             crossAxisCount: 2,
             childAspectRatio: 2.5 / 2,
             crossAxisSpacing: 10,
-            mainAxisSpacing: 33),
+            mainAxisSpacing: 20),
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
@@ -21,8 +21,8 @@ class ServicesGridView extends StatelessWidget {
             child: GridTile(
               child: Stack(children: [
                 Positioned(
-                  top: -3,
-                  bottom: -9,
+                  top: -2,
+                  bottom: -6,
                   right: 0,
                   left: 0,
                   child: ClipRRect(

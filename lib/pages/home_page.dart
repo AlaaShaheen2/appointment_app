@@ -1,7 +1,9 @@
 import 'package:appointment_app/widgets/constant.dart';
 import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
+import '../helper/bottom_navbar_home.dart';
 import '../widgets/grid_view_services.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,7 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: 22, bottom: 22),
+        padding: EdgeInsets.only(top: 10),
         child: Column(
           children: [
             Flexible(
@@ -82,6 +84,7 @@ class HomePage extends StatelessWidget {
         title: Text('Home Page'),
         backgroundColor: appBarColor,
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }
