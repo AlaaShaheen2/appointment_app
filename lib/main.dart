@@ -30,6 +30,5 @@ class MyApp extends StatelessWidget {
         HomePage.id: (context) => HomePage(),
       },
     );
-    // ZoomDrawer(menuScreen: menuScreen, mainScreen: mainScreen)
   }
 }

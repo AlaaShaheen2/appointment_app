@@ -126,6 +126,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Future<void> loginUser() async {
+    // ignore: unused_local_variable
     UserCredential user = await FirebaseAuth.instance
         .signInWithEmailAndPassword(email: email!, password: password!);
   }

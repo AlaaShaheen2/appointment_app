@@ -1,8 +1,5 @@
-import 'dart:math';
-
 import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../widgets/custome_icon.dart';
 
