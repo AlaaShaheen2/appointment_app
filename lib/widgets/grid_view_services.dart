@@ -1,3 +1,4 @@
+import 'package:appointment_app/pages/details_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../classes/services_items.dart';
@@ -16,7 +17,14 @@ class ServicesGridView extends StatelessWidget {
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => DetialsScreen(product: items[index]),
+              //   ),
+              // );
+            },
             child: GridTile(
               child: Stack(children: [
                 Positioned(
