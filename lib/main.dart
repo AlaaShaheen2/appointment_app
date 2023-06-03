@@ -1,3 +1,4 @@
+import 'package:appointment_app/pages/details_screen.dart';
 import 'package:appointment_app/pages/login_page.dart';
 import 'package:appointment_app/pages/signup_page.dart';
 import 'package:appointment_app/pages/welcome_page.dart';
@@ -22,12 +23,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomePage.id,
+      initialRoute: 'DetialsScreen',
       routes: {
         '/': (context) => WelcomePage(),
         '/login': (context) => LoginPage(),
         '/signup': (context) => SignupPage(),
         HomePage.id: (context) => HomePage(),
+        'DetialsScreen': (context) => DetialsScreen(),
       },
     );
   }
