@@ -1,5 +1,4 @@
-import 'dart:math';
-
+import 'package:appointment_app/pages/home_page.dart';
 import 'package:appointment_app/widgets/menu_button.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +47,12 @@ class SideMenuList extends StatelessWidget {
           MenuButton(
             iconData: Icons.home,
             nameIcon: 'Home Screen',
-            onClick: () {},
+            onClick: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomePage()),
+              );
+            },
           ),
           MenuButton(
             iconData: Icons.schedule,

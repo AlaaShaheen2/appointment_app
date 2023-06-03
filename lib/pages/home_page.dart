@@ -4,7 +4,6 @@ import 'package:appointment_app/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:shrink_sidemenu/shrink_sidemenu.dart';
 import '../helper/bottom_navbar_home.dart';
-import '../helper/global.dart';
 import '../widgets/grid_view_services.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,6 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final GlobalKey<SideMenuState> sideMwnuKey = GlobalKey<SideMenuState>();
   @override
   Widget build(BuildContext context) {
     return SideMenu(

@@ -18,12 +18,12 @@ class ServicesGridView extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
             onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (context) => DetialsScreen(product: items[index]),
-              //   ),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetialsScreen(product: items[index]),
+                ),
+              );
             },
             child: GridTile(
               child: Stack(children: [
