@@ -3,6 +3,7 @@ import '../classes/services_items.dart';
 import '../helper/bottom_navbar_home.dart';
 import '../widgets/constant.dart';
 
+// ignore: must_be_immutable
 class DetialsScreen extends StatefulWidget {
   Item? product;
   DetialsScreen({this.product});
@@ -28,7 +29,7 @@ class _DetialsScreenState extends State<DetialsScreen> {
               height: 11,
             ),
             Text(
-              "Hair Cut",
+              widget.product!.name,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(
