@@ -6,10 +6,10 @@ class Item {
 }
 
 final List<Item> items = [
-  Item(name: 'Nail', imgPath: "assets/images/services/4.png"),
-  Item(name: 'Hair cut', imgPath: "assets/images/services/1.png"),
-  Item(name: 'Hair care', imgPath: "assets/images/services/2.png"),
-  Item(name: 'Pedicure', imgPath: "assets/images/services/3.png"),
-  Item(name: 'Makeup', imgPath: "assets/images/services/5.png"),
-  Item(name: 'Facial', imgPath: "assets/images/services/6.png"),
+  Item(name: 'Nail', imgPath: "assets/images/services/9.png"),
+  Item(name: 'Hair cut', imgPath: "assets/images/services/12.png"),
+  Item(name: 'Hair care', imgPath: "assets/images/services/10.png"),
+  Item(name: 'Pedicure', imgPath: "assets/images/services/14.png"),
+  Item(name: 'Makeup', imgPath: "assets/images/services/11.png"),
+  Item(name: 'Facial', imgPath: "assets/images/services/13.png"),
 ];
