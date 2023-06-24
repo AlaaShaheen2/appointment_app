@@ -71,19 +71,6 @@ class ServicesGridView extends StatelessWidget {
                   ),
                 ),
               ),
-              // footer: GridTileBar(
-              //   backgroundColor: Color.fromARGB(66, 73, 127, 110),
-              //   title: Center(
-              //     child: Text(
-              //       items[index].name,
-              //       style: TextStyle(
-              //         color: Color.fromARGB(255, 112, 61, 98),
-              //         fontWeight: FontWeight.bold,
-              //         fontSize: 18,
-              //       ),
-              //     ),
-              //   ),
-              // ),
             ),
           );
         });

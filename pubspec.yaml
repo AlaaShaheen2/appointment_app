@@ -41,7 +41,7 @@ dependencies:
   google_nav_bar: ^5.0.6
   flutter_zoom_drawer: ^3.0.3
   shrink_sidemenu: ^2.0.0+2-null-safety
- 
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:

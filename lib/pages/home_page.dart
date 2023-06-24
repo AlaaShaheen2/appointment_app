@@ -26,6 +26,31 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: backGround,
         appBar: AppBar(
+          actions: [
+            Row(
+              children: [
+                Stack(
+                  children: [
+                    Positioned(
+                      bottom: 22.5,
+                      child: Container(
+                        child: Text('8'),
+                        padding: EdgeInsets.all(6),
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 119, 53, 130),
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.schedule),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
           backgroundColor: appBarColor,
           title: Text('Home Page'),
           leading: IconButton(
